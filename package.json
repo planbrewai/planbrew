@@ -1,0 +1,40 @@
+{
+  "name": "planbrew-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for PlanBrew - project memory for AI coding agents",
+  "main": "dist/index.js",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "planbrew-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcp",
+    "planbrew",
+    "ai",
+    "developer-tools",
+    "progress-tracking",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "codex"
+  ],
+  "homepage": "https://www.planbrew.ai",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
